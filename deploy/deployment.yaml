@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shopping-cart-svc
+spec:
+  selector:
+    matchLabels:
+      app: shopping-cart-svc
+  template:
+    metadata:
+      labels:
+        app: shopping-cart-svc
+    spec:
+      containers:
+      - name: shopping-cart-svc
+        image: to-be-replaced:latest
+        ports:
+        - containerPort: 8080
+        env:
+          - name: PORT
+            value: "8080"

@@ -1,0 +1,7 @@
+site_name: 'shopping-cart-svc-docs'
+site_description: Shopping Cart Service
+nav:
+  - Overview: index.md
+
+plugins:
+  - techdocs-core
